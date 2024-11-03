@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+    <!-- navigation bar -->
+    <nav class="navbar">
+        <img src="images/logo.png" alt="logo" id="logo">
+        
+        <!-- menu -->
+        <ul id="menu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            
+            <li><a onmouseover="hover(this)" onmouseout="noHover(this)" onclick="myHome(this)">Home</a></li>
+            <li><a onmouseover="hover(this)" onmouseout="noHover(this)" onclick="myAbout(this)">About</a></li>
+            <li><a onmouseover="hover(this)" onmouseout="noHover(this)" onclick="myServices(this)">Services</a></li>
+            <li><a onmouseover="hover(this)" onmouseout="noHover(this)" onclick="myContact(this)">Contact</a></li>
+        </ul>
+
+        <span class="openbtn" onclick="openNav()">&#9776;</span>
+    </nav>
+
+
+    <!-- home -->
+    <section id="home">
+        <p class="para">
+
+        
+            
+            As a skilled and experienced web developer, I possess a deep understanding of both front-end and back-end technologies, enabling me to create dynamic, responsive, and user-friendly websites that meet the diverse needs of clients across various industries.
+            
+            With a meticulous eye for detail and a passion for clean, efficient code, I excel at transforming design concepts into fully functional websites that not only look great but also perform seamlessly across different browsers and devices. My proficiency in HTML, CSS, and JavaScript allows me to craft engaging and interactive user interfaces, while my expertise in server-side languages like PHP, Python, or Node.js empowers me to build robust and scalable back-end systems.
+            
+            I am adept at leveraging modern web development frameworks and libraries such as React, Angular, or Vue.js to streamline development processes and enhance the overall performance of web applications. Additionally, my knowledge of database management systems like MySQL, MongoDB, or PostgreSQL enables me to design efficient data storage solutions tailored to the specific requirements of each project.
+            
+            Furthermore, I am well-versed in web accessibility standards and SEO best practices, ensuring that the websites I develop are not only accessible to all users but also optimized for search engines to maximize visibility and reach.
+            
+            Collaborative by nature, I thrive in team environments and enjoy working closely with designers, project managers, and other stakeholders to deliver solutions that exceed expectations. Whether it's building a brand new website from scratch, revamping an existing site, or troubleshooting technical issues, I am committed to delivering high-quality, reliable, and scalable web solutions that drive business growth and success.
+            
+            In a rapidly evolving digital landscape, I am dedicated to staying abreast of emerging technologies and industry trends, continuously honing my skills to deliver cutting-edge solutions that keep my clients ahead of the curve.
+            
+            With a passion for innovation and a commitment to excellence, I am ready to tackle any web development challenge and help bring your vision to life on the digital stage.</p>
+    </section>
+
+
+    <!-- about -->
+    <section id="about">
+        <h1 class="heading">About</h1>
+        <p class="para">
+
+            
+            
+            Greetings! I'm Taha Saif, a passionate and dedicated individual with a flair for creativity and a penchant for problem-solving. As an avid explorer of the digital realm, I thrive on the endless possibilities offered by technology and the boundless opportunities it presents for innovation and growth.
+            
+            With a background in Computer Science, I bring a wealth of knowledge and expertise to the table, coupled with a relentless drive to exceed expectations and deliver exceptional results. Whether it's diving into lines of code to craft captivating websites or brainstorming innovative solutions to complex challenges, I'm always up for the task.
+            
+            Outside of the digital domain, you'll often find me in Programming and technologies, indulging in the beauty of nature, or immersing myself in captivating stories through literature or film. I believe in the power of balance, finding harmony between work and play to nourish the mind, body, and soul.
+            
+            But above all, what truly fuels my passion is the opportunity to make a positive impact, whether it's through crafting intuitive user experiences, contributing to meaningful projects, or simply lending a helping hand wherever it's needed.
+            
+            So come along on this journey with me as we explore the endless possibilities of the digital world and strive to make a difference, one pixel at a time. Let's create something extraordinary together!</p>
+    </section>
+
+
+    <!-- services -->
+    <section id="services">
+        <h1 class="heading">Services</h1>
+        <ul id="service">
+            <li> Custom Website Development:
+                Hey I'm specialized in crafting bespoke websites tailored to your unique needs and specifications. Whether you're launching a new business or refreshing your online presence, we'll work closely with you to design and develop a stunning website that reflects your brand identity and engages your audience.</li>
+            <li>Responsive Design:
+                In today's mobile-first world, responsive design is non-negotiable. Our expert developers ensure that your website looks and functions flawlessly across all devices and screen sizes, providing users with a consistent and enjoyable browsing experience wherever they are.</li>
+            <li>Website Maintenance and Support:
+                Your website is a valuable asset that requires ongoing care and attention. Our dedicated support team provides regular maintenance, security updates, and performance optimization to ensure that your website remains secure, stable, and up-to-date at all times.</li>
+            <li>Web Hosting and Domain Management:
+                Leave the technical details to us with our reliable web hosting and domain management services. We'll handle all aspects of hosting setup, configuration, and maintenance, ensuring that your website remains accessible and secure around the clock.</li>
+            <li>Custom Web Applications:
+                Need a powerful web application to streamline your business processes or enhance user engagement? Our experienced developers excel at building custom web applications tailored to your specific requirements, from CRM systems and booking platforms to online communities and beyond.</li>
+        </ul>
+    </section>
+    
+
+    <!-- contact -->
+    <section id="contact">
+        <h1 class="heading">Get in touch</h1>
+
+        <ul>
+            <li><a href="malito:tahasaif454@gmail.com" id="mail" onmouseover="mailOver(this)" onmouseout="mailOut(this)">Send Email</a></li>
+            <li><img src="images/phone-solid.svg" alt="phone" height="15" style="margin-right: 5px;"> +923194574764</li>
+            <li><img src="images/location-dot-solid.svg" alt="location" height="16" style="margin-right: 5px;">Hyderabad, Sindh, Pakistan</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p id="center">&copy; 2024 Hyderabad Pakistan</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
